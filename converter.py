@@ -1,4 +1,3 @@
-import json
 from transliterate import translit
 def transliterate_dict(d):
     for key, value in d.items():

@@ -1,5 +1,4 @@
 import web_scraping
-import model
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import RedirectResponse
 import starlette.status as status
