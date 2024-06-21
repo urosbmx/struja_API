@@ -16,7 +16,7 @@ test = web_scraping.Web_scraping()
 @app.get("/")
 async def main():
     # Redirect to /docs (relative URL)
-    return RedirectResponse(url="/docs", status_code=status.HTTP_302_FOUND)
+    return RedirectResponse(url="/docs", status_code=status.HTTP_200_OK_FOUND)
 
 
 @app.get("/beograd")
