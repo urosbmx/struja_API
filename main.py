@@ -1,7 +1,5 @@
 import web_scraping
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import RedirectResponse
-import starlette.status as status
 
 from latin_converter import CharactersMapper
 
@@ -11,13 +9,6 @@ app = FastAPI(
     terms_of_service="https://elektrodistribucija.rs/planirana-iskljucenja/planirana-bgd",
 )
 test = web_scraping.Web_scraping()
-
-
-# Redirect to home
-@app.get("/")
-async def main():
-    # Redirect to /docs (relative URL)
-    return RedirectResponse(url="/docs", status_code=status.HTTP_200_OK_FOUND)
 
 
 @app.get("/beograd")

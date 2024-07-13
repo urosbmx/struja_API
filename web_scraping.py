@@ -1,10 +1,9 @@
 import json
-
-import cyrtranslit
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import converter
+
+
 
 
 class Web_scraping:
