@@ -24,3 +24,4 @@ json_data = [dict(zip(convert_head, row)) for row in translated_responses[1:]]
 # Upload data to Firestore
 for i, entry in enumerate(json_data):
     db.collection('Belgrade').document(f'document_{i}').set(entry)
+print("Data uploaded")
